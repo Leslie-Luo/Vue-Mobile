@@ -5,6 +5,8 @@
   <a href="https://mit-license.org"><img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="License"></a>
 </p>
 
+##### 使用帮助
+
 ```shell
 安装
 npm install
@@ -15,4 +17,3 @@ npm run build
 文件校验和自动修复
 npm run lint
 ```
-
