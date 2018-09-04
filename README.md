@@ -1,21 +1,21 @@
 # Vue-Mobile
 
-## Project setup
-```
+## 安装
+```shell
 npm install
 ```
 
-### Compiles and hot-reloads for development
-```
+### 启动
+```shell
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
+### 打包
+```shell
 npm run build
 ```
 
 ### Lints and fixes files
-```
+```shell
 npm run lint
 ```
