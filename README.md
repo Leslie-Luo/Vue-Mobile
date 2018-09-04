@@ -1,4 +1,4 @@
-# Vant
+# Vue-Mobile
 
 ## Project setup
 ```
