@@ -19,7 +19,10 @@ const article = {
   },
   // post提交
   login(params) {
-    return axios.post(`${server.sq}/accesstoken`, qs.stringify(params));
+    return axios.post(`${server.sq}/api/test`, qs.stringify(params));
+  },
+  getdata() {
+    return axios.get(`${server.sq}/api/getdata`);
   }
   // 其他接口…………
 };

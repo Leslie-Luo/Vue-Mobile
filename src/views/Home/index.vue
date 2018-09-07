@@ -2,7 +2,7 @@
   <div class="home">
     <img 
       alt="Vue logo" 
-      src="../../assets/logo.png">
+      src="https://iiong.com/wp-content/uploads/2018/09/1_-PlqbnwqjqJi_EVmrhmuDQ-360x240.jpeg">
     <HelloWorld msg="Welcome to Your Vue.js App" />
     <h1>{{name}}</h1>
     <van-button 
@@ -12,6 +12,10 @@
     <van-button 
       type="primary" 
       @click="ToPage">ToPage</van-button>
+      <van-button 
+      :loading="loading" 
+      type="primary" 
+      @click="ApiAjax">Ajax</van-button>
   </div>
 </template>
 
@@ -54,8 +58,16 @@ export default {
         this.$router.push("goods");
       } else {
         console.log("Iphone");
-        this.$router.replace("goods");
+        this.$router.push("goods");
       }
+    },
+    ApiAjax: function() {
+      this.loading = true;
+      this.$api.article.getdata().then(res => {
+        // 执行某些操作
+        console.log(res.data);
+        this.loading = false;
+      });
     }
   }
 };

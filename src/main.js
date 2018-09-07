@@ -10,7 +10,9 @@ Vue.prototype.$api = api;
 
 require("./mock");
 
-NProgress.configure({ showSpinner: false }); // NProgress Configuration
+NProgress.configure({
+  showSpinner: false
+}); // NProgress Configuration
 
 Vue.config.productionTip = false;
 

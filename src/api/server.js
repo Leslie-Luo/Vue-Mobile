@@ -2,7 +2,7 @@
  * 接口域名的管理
  */
 const base = {
-  sq: "",
+  sq: "http://localhost:3000",
   bd: ""
 };
 
